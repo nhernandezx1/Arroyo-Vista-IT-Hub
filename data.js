@@ -29,11 +29,11 @@ const DEFAULT_DATA = {
     {
       id: "a2",
       category: "NextGen EHR",
-      title: "Resolving NextGen Login & Template Loading Issues",
+      title: "Resolving NextGen Template Loading Issues",
       date: "May 21, 2026",
       author: "Applications Team",
       readTime: "6 min",
-      body: "<p>If NextGen is slow to load templates or rejects your login, work through these steps before opening a ticket:</p><ol><li>Confirm you're on the clinic network or VPN — NextGen is not reachable from the open internet.</li><li>Clear the local cache: <code>File &rarr; Clear Cache</code>, then restart the client.</li><li>Verify your token/2FA device clock is correct.</li></ol><p>Persistent template errors are usually a server-side sync issue. Note the exact error code and the workstation name, then escalate — we coordinate directly with NextGen support for these.</p>"
+      body: "<p>If NextGen is slow to load templates, work through these steps before opening a ticket:</p><ol><li>Confirm background applications are not using resources unnecesarily.</li><li>Clear the local cache: <code>File &rarr; Clear Cache</code>, then restart the client.</li><li>Verify if slowness is happening for one specific task/template.</li></ol><p>Persistent template errors are usually a server-side sync issue. Note the exact error code and the workstation name, then escalate — we coordinate directly with NextGen support for these.</p>"
     },
     {
       id: "a3",
@@ -42,7 +42,7 @@ const DEFAULT_DATA = {
       date: "May 9, 2026",
       author: "Desktop Support",
       readTime: "3 min",
-      body: "<p>New hire or replacing aging hardware? Submit a device request through the portal with the site, role, and required applications. Standard imaging includes Windows, Microsoft 365, NextGen, and endpoint protection.</p><p>Lead time is typically <strong>3–5 business days</strong>. For clinical roles we pre-stage NextGen and printer mappings so the workstation is ready on day one.</p>"
+      body: "<p>New hire or replacing aging hardware? Submit a device request through the Work Order Request form with the site, role, and required applications. Standard imaging includes Windows, Microsoft 365, NextGen, and endpoint protection.</p><p>Lead time is typically <strong>1-3 business days</strong>. If the station requires unique accomodations let us know so the workstation is ready on day one.</p>"
     }
   ],
 
@@ -82,8 +82,8 @@ const DEFAULT_DATA = {
     },
     {
       id: "t5", initials: "IR", name: "Isaac Rivas", role: "IT Help Desk",
-      tenure: "Help Desk · x2033", email: "irivas@arroyovista.org", ext: "x2033",
-      about: "A friendly first voice on the line. Isaac triages incoming tickets, resolves day-to-day issues fast, and makes sure staff get back to caring for patients quickly."
+      tenure: "Help Desk · x2034", email: "irivas@arroyovista.org", ext: "x2034",
+      about: "Acting as an amiable primary contact, Isaac filters inbound helpdesk items, promptly settles commonplace glitches, and diligently tracks all appeals to completion."
     }
   ],
 
@@ -96,19 +96,19 @@ const DEFAULT_DATA = {
   /* NextGen knowledge base */
   nextgenKbUrl: "https://www.community.nextgen.com/",
   nextgenFaqs: [
-    { q: "NextGen is frozen or won't load.", a: "Confirm you're on the clinic network or VPN — NextGen isn't reachable from the open internet. Fully close the client (don't just minimize), reopen it, and clear the local cache via File → Clear Cache. If it still hangs, note the workstation name and call the Help Desk at x2033." },
-    { q: "I can't log in / my account is locked.", a: "Triple-check Caps Lock and that you're using your current network password. After three failed attempts the account locks for security. Wait a few minutes and retry, or call the Help Desk (x2033) to verify your identity and unlock it. We never reset clinical credentials without verifying who you are." },
-    { q: "A template or document won't load.", a: "This is usually a server-side sync issue. Clear the local cache (File → Clear Cache) and restart the client. Write down the exact error code and the template name, then open a ticket — we coordinate these directly with NextGen support." },
-    { q: "NextGen is running very slowly.", a: "Close unused charts and tabs, then restart the client to clear memory. If multiple staff at your site are slow at the same time, it's likely network — report it to the Help Desk with your site name so we can check the connection." },
+    { q: "NextGen is frozen or won't load.", a: "Fully close Nextgen (Not the Cloud) and reopen it. This will clear the cache. If it still hangs, note the workstation name and call the Help Desk at x2033." },
+    { q: "I can't log in / my account is locked.", a: "Triple-check Caps Lock and that you're using your current network password. After three failed attempts the account locks for security. Wait 15 minutes and retry, or call the Help Desk (x2033) to verify your identity and unlock it. We never reset clinical credentials without verifying who you are." },
+    { q: "A template or document won't load.", a: "This is usually a server-side sync issue. Close your application and restart the program. Write down the exact error code or take a screenshot, then open a ticket — we coordinate these directly with NextGen support." },
+    { q: "NextGen is running very slowly.", a: "Close unused charts, tabs, or files then restart the program to clear memory. If multiple staff at your site are slow at the same time, it's likely network — report it to the Help Desk with your site name so we can check the connection." },
     { q: "I can't find a patient's chart.", a: "Verify spelling, date of birth, and that you're searching the correct enterprise/practice. If the chart still doesn't appear it may be merged or restricted — open a ticket and we'll trace it without exposing protected information." },
-    { q: "Printing from NextGen isn't working.", a: "Confirm the correct printer is selected in the print dialog (not a disconnected default). If your site printer is missing entirely, submit a ticket with the site and printer location and we'll push the mapping remotely." }
+    { q: "Printing isn't working.", a: "Confirm the correct printer is selected in the print dialog (Arroyo Print Queue). If Arroyo Print Queue printer is missing entirely, submit a ticket and we'll connect with you to map the printer." }
   ],
 
   faqs: [
-    { q: "How do I reset my password?", a: "Use the self-service portal link on the login screen, or call the Help Desk at extension x2033. For security, we'll verify your identity before resetting clinical system credentials." },
-    { q: "My NextGen is frozen or won't load. What now?", a: "First confirm you're on the clinic network or VPN. Close and reopen the client, then clear the local cache (File → Clear Cache). If it persists, note the error and workstation name and open a ticket — these often need a server-side check." },
-    { q: "How do I connect to the printer at my site?", a: "Printers are mapped automatically on imaged workstations. If yours is missing, submit a ticket with the site name and printer location and we'll push the mapping remotely." },
-    { q: "I think I received a phishing email. What should I do?", a: "Do not click any links or attachments. Forward the message to itstaff@arroyovista.org and delete it. If you already clicked, change your password immediately and call the Help Desk at x2033." },
+    { q: "How do I reset my password?", a: "Call the Help Desk at extension x9030. For security, we'll verify your identity before resetting clinical system credentials." },
+    { q: "I can't log in to the cloud. What now?", a: "First confirm your computer has internet. Confirm you have the right version of the cloud. The most updated version can be found in the S-Drive. If it persists, note the error, workstation name and open a ticket — these often need a server-side check." },
+    { q: "How do I connect to the printer at my site?", a: "Printers are mapped automatically on imaged workstations. If yours is missing, submit a ticket with the site name and printer location and we'll connect with you." },
+    { q: "I think I received a phishing email. What should I do?", a: "Do not click any links or attachments. Forward the message to itstaff@arroyovista.org and delete it. If you already clicked, immediately call the Help Desk at x9030. You may be insrtucted to reset your password" },
     { q: "How long does a typical ticket take to resolve?", a: "Most routine issues are resolved within one business day, with an average first response under 3 hours. Complex issues or vendor escalations (NextGen, MTS) may take longer — you'll get status updates along the way." }
   ]
 };
