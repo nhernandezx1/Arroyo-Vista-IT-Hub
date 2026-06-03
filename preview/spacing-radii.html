@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<style>
+@font-face{font-family:'Orbitron';src:url('../fonts/Orbitron-VariableFont_wght.ttf') format('truetype');font-weight:400 900;font-display:swap;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{width:700px;font-family:'Inter',sans-serif;background:#05080e;color:#dce7f1;
+  background-image:radial-gradient(140% 100% at 50% 0%, #0a1320 0%, #05080e 60%);}
+.card{padding:26px 28px;}
+.disp{font-family:'Orbitron',sans-serif;} .mono{font-family:'Space Grotesk',monospace;}
+.muted{color:#8093a6;} .faint{color:#5a6b7d;}
+.lbl{font-family:'Space Grotesk',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#5a6b7d;}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+.glass{background:rgba(16,24,36,0.62);backdrop-filter:blur(14px);border:1px solid rgba(120,170,220,0.14);border-radius:16px;}
+
+</style></head><body><div class="card">
+  <div class="lbl">Radii & elevation</div>
+  <div class="row" style="margin-top:14px;gap:16px;align-items:flex-end;">
+    <div style="text-align:center;">
+      <div style="width:70px;height:54px;background:rgba(16,24,36,0.8);border:1px solid rgba(120,170,220,0.24);border-radius:10px;"></div>
+      <div class="faint mono" style="font-size:10px;margin-top:6px;">10px · btn</div></div><div style="text-align:center;">
+      <div style="width:70px;height:54px;background:rgba(16,24,36,0.8);border:1px solid rgba(120,170,220,0.24);border-radius:16px;"></div>
+      <div class="faint mono" style="font-size:10px;margin-top:6px;">16px · card</div></div><div style="text-align:center;">
+      <div style="width:70px;height:54px;background:rgba(16,24,36,0.8);border:1px solid rgba(120,170,220,0.24);border-radius:26px;"></div>
+      <div class="faint mono" style="font-size:10px;margin-top:6px;">26px · bezel</div></div><div style="text-align:center;">
+      <div style="width:70px;height:54px;background:rgba(16,24,36,0.8);border:1px solid rgba(120,170,220,0.24);border-radius:999px;"></div>
+      <div class="faint mono" style="font-size:10px;margin-top:6px;">999 · pill</div></div>
+  </div>
+  <div class="lbl" style="margin-top:22px;">Elevation</div>
+  <div class="row" style="margin-top:14px;gap:18px;">
+    <div style="width:130px;height:54px;border-radius:14px;background:#0c131e;border:1px solid rgba(120,170,220,0.14);"></div>
+    <div style="width:130px;height:54px;border-radius:14px;background:#0c131e;border:1px solid rgba(120,170,220,0.28);box-shadow:0 16px 40px -18px rgba(0,0,0,.85);"></div>
+    <div style="width:130px;height:54px;border-radius:14px;background:#0c131e;border:1px solid rgba(34,197,94,.4);box-shadow:0 0 18px -2px rgba(34,197,94,.5);"></div>
+  </div>
+  <div class="row" style="gap:42px;margin-top:6px;"><span class="faint" style="font-size:10px;">rest</span><span class="faint" style="font-size:10px;">hover</span><span class="faint" style="font-size:10px;">accent glow</span></div>
+</div></body></html>
