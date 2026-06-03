@@ -109,7 +109,8 @@ const DEFAULT_DATA = {
     { q: "I can't log in to the cloud. What now?", a: "First confirm your computer has internet. Confirm you have the right version of the cloud. The most updated version can be found in the S-Drive. If it persists, note the error, workstation name and open a ticket — these often need a server-side check." },
     { q: "How do I connect to the printer at my site?", a: "Printers are mapped automatically on imaged workstations. If yours is missing, submit a ticket with the site name and printer location and we'll connect with you." },
     { q: "I think I received a phishing email. What should I do?", a: "Do not click any links or attachments. Forward the message to itstaff@arroyovista.org and delete it. If you already clicked, immediately call the Help Desk at x9030. You may be insrtucted to reset your password" },
-    { q: "How long does a typical ticket take to resolve?", a: "Most routine issues are resolved within one business day, with an average first response under 3 hours. Complex issues or vendor escalations (NextGen, MTS) may take longer — you'll get status updates along the way." }
+    { q: "How long does a typical ticket take to resolve?", a: "Most routine issues are resolved within one business day, with an average first response under 3 hours. Complex issues or vendor escalations (NextGen, MTS) may take longer — you'll get status updates along the way." },
+    { q: "The printer isn't printing or scanning. How do I fix this?", a: "Sometimes printers lose internet. This can be solved by rebooting the printer. Press the power button to turn off, then turn it back on. If there is an error message please note it down and call x9030. We may need to inspect the physical machine or escalate the issue to our printer vendor." }
   ]
 };
 
